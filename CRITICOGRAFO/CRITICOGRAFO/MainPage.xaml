@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CRITICOGRAFO.MainPage">
+
+    <StackLayout>
+        <Frame Padding="4" Margin="0">
+        <Label Text="Actividad Criticografo" FontSize="22" HorizontalTextAlignment="Center" TextColor="Black"  />
+        </Frame>
+        <Grid >
+            <Label Text="Nombre"
+       FontSize="17"
+       Grid.Row="0" Grid.Column="0"
+       Margin="25,20,0,0"
+       TextColor="Black"
+       TextTransform="Uppercase" />
+            <Frame BorderColor="Black" Padding="0" Grid.Row="1" Grid.Column="0" Margin="20,0,0,0">
+
+                <Entry Grid.Row="1" x:Name="Nombre" Grid.Column="0" Margin="20,0,10,0"  />
+            </Frame>
+
+            <Label Text="Genero" FontSize="17" TextColor="Black" TextTransform="Uppercase" Grid.Column="0" Grid.Row="3" Margin="25,0,0,0"/>
+            <RadioButton Content="Hombre" CheckedChanged="GeneroCambiado" Grid.Row="4" Grid.Column="0" x:Name="Hombre" Margin="20,0,0,0"/>
+            <RadioButton Content="Mujer" CheckedChanged="GeneroCambiado" Grid.Row="4" Grid.Column="1" x:Name="Mujer" Margin="20,0,0,0" />
+            
+                <CheckBox IsChecked="False" VerticalOptions="CenterAndExpand" x:Name="Alto" Grid.Column="0" Grid.Row="5" Color="Black" Margin="25,0,0,0"/>
+            <Label Text="ALTO" VerticalOptions="CenterAndExpand" Grid.Column="0" Grid.Row="5" TextColor="Black" Margin="40,0,0,0" Padding="15,0,0,0"/>
+
+            <CheckBox IsChecked="False" VerticalOptions="CenterAndExpand" x:Name="Feo" Grid.Column="1" Grid.Row="5" Color="Black" Margin="25,0,0,0"/>
+            <Label Text="FEO" VerticalOptions="CenterAndExpand" Grid.Column="1" Grid.Row="5" TextColor="Black" Margin="40,0,0,0" Padding="15,0,0,0"/>
+
+            <CheckBox IsChecked="False" VerticalOptions="CenterAndExpand" x:Name="Listo" Grid.Column="0" Grid.Row="6" Color="Black" Margin="25,0,0,0"/>
+            <Label Text="LISTO" VerticalOptions="CenterAndExpand" Grid.Column="0" Grid.Row="6" TextColor="Black" Margin="40,0,0,0" Padding="15,0,0,0"/>
+
+            <CheckBox IsChecked="False" VerticalOptions="CenterAndExpand" x:Name="Extravagante" Grid.Column="1" Grid.Row="6" Color="Black" Margin="25,0,0,0"/>
+            <Label Text="EXTRAVAGANTE" VerticalOptions="CenterAndExpand" Grid.Column="1" Grid.Row="6" TextColor="Black" Margin="40,0,0,0" Padding="15,0,0,0"/>
+
+
+            <CheckBox IsChecked="False"  VerticalOptions="CenterAndExpand" x:Name="Raro" Grid.Column="0" Grid.Row="7" Color="Black" Margin="25,0,0,0"/>
+            <Label Text="RARO" VerticalOptions="CenterAndExpand" Grid.Column="0" Grid.Row="7" TextColor="Black" Margin="40,0,0,0" Padding="15,0,0,0"/>
+
+            <CheckBox IsChecked="False" VerticalOptions="CenterAndExpand" x:Name="Grande" Grid.Column="1" Grid.Row="7" Color="Black" Margin="25,0,0,0" />
+            <Label Text="GRANDE" VerticalOptions="CenterAndExpand" Grid.Column="1" Grid.Row="7" TextColor="Black" Margin="40,0,0,0" Padding="15,0,0,0"/>
+
+            <Button Text="CRITICAR" Clicked="CriticarButton_Clicked" BorderWidth="1"  FontSize="25" BorderColor="Black" Grid.Row="8" Grid.ColumnSpan="2" Margin="25,0,25,0" TextColor="Black" TextTransform="Uppercase"/>
+
+
+            <Entry x:Name="info"  Grid.Row="9" Grid.ColumnSpan="2"  TextColor="Black" Margin="20,0,20,0"/>
+
+        </Grid>
+        
+    </StackLayout>
+
+</ContentPage>
